@@ -53,8 +53,8 @@ scroll_navbar(
 # 5. Force anchor
 st.subheader("Example 5")
 force_body = None
-if st.button("Go to Body"):
-    force_body = "Body"
+if st.button("Go to Settings"):
+    force_body = "Settings"
 scroll_navbar(
         anchor_ids,
         key="5",
@@ -69,7 +69,7 @@ with st.sidebar:
         anchor_ids,
         key="navbar6",
         orientation="vertical")
-    st.write(f"{active_anchor} is active")
+    st.write(f"Example 6: {active_anchor}")
 
 # Dummy page setup
 for anchor_id in anchor_ids:

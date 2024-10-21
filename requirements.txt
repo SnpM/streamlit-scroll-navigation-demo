@@ -1,2 +1,2 @@
 streamlit==1.39.0
-streamlit-scroll-navigation==1.0.1
+streamlit-scroll-navigation
