@@ -1,6 +1,7 @@
-# Create a dummy streamlit page 
+# Setup
 import streamlit as st
 from streamlit_scroll_navigation import scroll_navbar
+st.set_page_config(layout="wide", page_title="Scroll Navigation Demo")
 
 # Anchor IDs and icons
 anchor_ids = ["About", "Features", "Settings", "Pricing", "Contact"]
