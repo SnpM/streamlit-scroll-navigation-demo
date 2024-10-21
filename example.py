@@ -59,15 +59,15 @@ scroll_navbar(
 
 # 5. Force anchor
 st.subheader("Example 5")
-force_body = None
+force_settings = None
 if st.button("Go to Settings"):
-    force_body = "Settings"
+    force_settings = "Settings"
 scroll_navbar(
         anchor_ids,
         key="5",
         anchor_icons=anchor_icons,
         orientation="horizontal",
-        force_anchor=force_body)
+        force_anchor=force_settings)
 
 # 6. Retrieve active anchor
 with st.sidebar:
