@@ -69,14 +69,23 @@ scroll_navbar(
         orientation="horizontal",
         force_anchor=force_settings)
 
-# 6. Retrieve active anchor
+# 6. Retrieve active anchor 
 with st.sidebar:
     st.subheader("Example 6")
     active_anchor = scroll_navbar(
         anchor_ids,
         key="navbar6",
         orientation="vertical")
-    st.write(f"{active_anchor} is active")
+    st.write(f"{active_anchor} is active in Example 6")
+    
+# 7. Disable automatic active anchor updates
+with st.sidebar:
+    st.subheader("Example 7")
+    scroll_navbar(
+        anchor_ids=anchor_ids,
+        key="navbar7",
+        orientation="vertical",
+        auto_update_anchor=False)
 
 # Dummy page setup
 for anchor_id in anchor_ids:
