@@ -63,7 +63,7 @@ if st.button("Go to Settings"):
     force_settings = "Settings"
 scroll_navbar(
         anchor_ids,
-        key="5",
+        key="navbar5",
         anchor_icons=anchor_icons,
         orientation="horizontal",
         force_anchor=force_settings)
